@@ -18,7 +18,7 @@ services:
     image: ${OC_DOCKER_IMAGE:-opencloudeu/opencloud-rolling}:${OC_DOCKER_TAG:-5.2.0}
     user: ${OC_CONTAINER_UID_GID:-1000:1000}
     dns:
-      - ${OC_DNS_SERVER:-}
+      - 192.168.178.16
     networks:
       - opencloud-net
       - services
