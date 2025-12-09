@@ -5,7 +5,7 @@ services:
     # changelog: https://github.com/opencloud-eu/opencloud/tree/main/changelog
     # release notes: https://docs.opencloud.eu/opencloud_release_notes.html
     dns:
-      - 192.168.178.16
+      - ${OC_DNS_SERVER:-}
     user: ${OC_CONTAINER_UID_GID:-1000:1000}
     networks:
       - opencloud-net
